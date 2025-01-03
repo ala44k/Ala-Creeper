@@ -1,0 +1,112 @@
+/* styles.css */
+body {
+    margin: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#game {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-color: #f7f7f7;
+    overflow: hidden;
+}
+
+#player {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    width: 50px;
+    height: 50px;
+    background: url(https://e7.pngegg.com/pngimages/637/603/png-clipart-minecraft-pocket-edition-herobrine-coloring-book-minecart-steve-bartkowski-fictional-character-dead-island.png) no-repeat center;
+    background-size: cover;
+    border-radius: 5px;
+}
+
+
+#obstacle {
+    position: absolute;
+    bottom: 50px;
+    right: -50px;
+    width: 80px; /* حجم السيارة */
+    height: 50px;
+    background: url(https://e7.pngegg.com/pngimages/952/292/png-clipart-minecraft-creeper-drawing-mob-minecraft-leaf-chibi.png) no-repeat center;
+    background-size: cover;
+#restartButton {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none; /* مخفي بشكل افتراضي */
+    z-index: 100; /* تأكد من ظهوره فوق بقية العناصر */
+}
+
+#restartButton:hover {
+    background-color: #2980b9;
+}
+  #signature {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px; /* حجم الخط */
+    font-family: 'Cursive', sans-serif; /* اختيار خط جميل */
+    color: #2c3e50; /* لون التوقيع */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* إضافة ظل للخط لإظهاره بشكل أفضل */
+    font-weight: bold; /* زيادة سمك الخط */
+    letter-spacing: 1px; /* المسافة بين الحروف */
+    opacity: 0.8; /* الشفافية لجعل التوقيع غير مزعج */
+    z-index: 1000; /* التأكد من أن التوقيع في الأعلى */
+}
+
+#signature:hover {
+    color: #e74c3c; /* تغيير اللون عند التمرير على التوقيع */
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.3); /* تكبير الظل عند التمرير */
+}
+#startScreen {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ecf0f1;
+}
+
+#startButton {
+    padding: 15px 30px;
+    font-size: 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+#startButton:hover {
+    background-color: #2980b9;
+}
+
+#signature {
+    font-size: 18px;
+    font-family: 'Cursive', sans-serif;
+    color: #2c3e50;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    letter-spacing: 1px;
+    opacity: 0.8;
+}
+
+#game {
+    display: none; /* مخفي في البداية */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
